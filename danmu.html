@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=0">
 	<title>Document</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
 	<style>
 		#box {
 			position: absolute;
@@ -55,6 +56,23 @@
 	</div>
 	<script type="text/javascript" src="./DanMa.js"></script>
 	<script>
+
+		var stats = new Stats();
+		stats.showPanel(0);
+		document.body.appendChild( stats.domElement );
+		function animate() {
+
+			stats.begin();
+
+			// monitored code goes here
+
+			stats.end();
+
+			requestAnimationFrame( animate );
+
+		}
+
+		requestAnimationFrame( animate );
 		var a = new DanMa('test', 'danma', 15);
 		function shoot() {
 			var content = document.getElementById('input').value;
