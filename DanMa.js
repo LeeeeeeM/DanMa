@@ -73,7 +73,6 @@
         },
         check: function() {
         	if (!this._data.length) {
-        		_CAF(this.rid);
         		return false;
         	}
         	for(var i = 0; i< this._data.length; i++) {

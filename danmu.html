@@ -65,17 +65,10 @@
 		}
 
 		var productDm = function() {
-        	var colorMap = {
-        		'1': '#ff0',
-        		'2': '#f00',
-        		'3': '#0f0',
-        		'0': '#00f',
-        		'4': '#f0f'
-        	};
         	setInterval(function() {
         		a.emit({
         			text: '麦克克里斯保罗加索尔'.slice(0, Math.floor(Math.random() * 10)),
-        			color: colorMap[Math.floor(Math.random() * 4)]
+        			color: '#' + Math.floor(Math.random() * 0xffffff).toString(16)
         		})
         	}, 100);
         };
