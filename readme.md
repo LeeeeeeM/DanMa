@@ -1,4 +1,4 @@
-[查看demo](https://evilemon.github.io/DanMa/danmu.html)
+[查看demo](https://leeeeeem.github.io/DanMa/danmu.html)
 
 ## 当弹幕列表为空时，停止render，只有当有新的弹幕时重新开始渲染
 
