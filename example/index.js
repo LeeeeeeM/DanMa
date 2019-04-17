@@ -3,8 +3,8 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
-  (global.DanMa = factory());
-}(this, (function () { 'use strict';
+  (global = global || self, global.DanMa = factory());
+}(this, function () { 'use strict';
 
   var context = {
     canvas: null
@@ -117,6 +117,7 @@
   Stage.prototype.paint = function paint () {
     this.clear();
     this._isRunning = false;
+    this.paintTimer = null;
     if (this.pool.isEmpty()) { return }
     this._isRunning = true;
     var list = this.pool.getDms();
@@ -268,5 +269,5 @@
 
   return DanMa;
 
-})));
+}));
 //# sourceMappingURL=index.js.map

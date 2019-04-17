@@ -27,4 +27,4 @@ class Shoot {
   }
 }
 
-export default addToPool(Shoot)
+export default addToPool(Shoot, 100)

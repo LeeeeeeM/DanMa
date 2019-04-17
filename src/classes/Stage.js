@@ -53,6 +53,7 @@ export default class Stage {
   paint () {
     this.clear()
     this._isRunning = false
+    this.paintTimer = null
     if (this.pool.isEmpty()) return
     this._isRunning = true
     const list = this.pool.getDms()
