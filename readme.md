@@ -1,4 +1,8 @@
-[查看demo](https://leeeeeem.github.io/DanMa/danmu.html)
+[查看demo](https://leeeeeem.github.io/DanMa/example)
+
+重构代码，复用弹幕对象并且优化代码，性能提升。可以投入生产环境
+
+![示例](./preview.png)
 
 ## 当弹幕列表为空时，停止render，只有当有新的弹幕时重新开始渲染
 

@@ -1,0 +1,37 @@
+{
+  "name": "dan-ma",
+  "version": "0.1.1",
+  "description": "[查看demo](https://leeeeeem.github.io/DanMa/example)",
+  "main": "dist/release/index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --config=config/webpack.config.js",
+    "release:dv": "NODE_PHASE=dev rollup -c config/rollup.config.js",
+    "release:ol": "NODE_PHASE=ol rollup -c config/rollup.config.js",
+    "build": "npm run release:dv && npm run release:ol"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeeeeeeM/DanMa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeeeeeeM/DanMa/issues"
+  },
+  "homepage": "https://github.com/LeeeeeeM/DanMa#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-transform-runtime": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/runtime": "^7.4.3",
+    "babel-loader": "^8.0.5",
+    "html-webpack-plugin": "^3.0.7",
+    "rollup-plugin-buble": "^0.19.6",
+    "rollup-plugin-eslint": "^5.1.0",
+    "rollup-plugin-uglify": "^6.0.2",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1",
+    "yargs": "^13.2.2"
+  }
+}
