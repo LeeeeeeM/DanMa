@@ -54,7 +54,7 @@
 		<div id="btn">点击</div>
 		<input type="text" name="" id="input">
 	</div>
-	<script type="text/javascript" src="./DanMa.js"></script>
+	<script type="text/javascript" src="index.js"></script>
 	<script>
 
 		var stats = new Stats();
@@ -72,26 +72,8 @@
 
 		}
 
-		requestAnimationFrame( animate );
-		var a = new DanMa('test', 'danma', 15);
-		function shoot() {
-			var content = document.getElementById('input').value;
-			a.emit({
-				text: content,
-				color: '#00f' 
-			});
-		}
+		setTimeout( animate, 1000 );
 
-		var productDm = function() {
-        	setInterval(function() {
-        		a.emit({
-        			text: '麦克克里斯保罗加索尔'.slice(0, Math.floor(Math.random() * 10)),
-        			color: '#' + Math.floor(Math.random() * 0xffffff).toString(16)
-        		})
-        	}, 100);
-        };
-        productDm();
-		document.getElementById('btn').addEventListener('click', shoot);
 	</script>
-</body>
+<script type="text/javascript" src="test.js"></script></body>
 </html>

@@ -1,0 +1,15 @@
+src/*
+example/*
+
+config/*
+
+babel.config.js
+
+**/*.js.map
+
+*.png
+
+node_modules
+
+*.html
+.eslintrc
